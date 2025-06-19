@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP for Church Event</title>
+   <style>
+    body{
+        background-image: url(image/3\ cross.jpg);
+      height: 100%;
+      margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+header{
+      text-align: center;
+}
+.rsvp-section{
+   flex: 1;
+}
+
+footer {
+   
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+   </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ethiopian Evangelical Church, Birmingham </h1>
+        <h2>RSVP for Our Church Event</h2>
+        <p>Fill out the form below to confirm your attendance.</p>
+    </header>
+
+    <section class="rsvp-section">
+        <h2>RSVP Form</h2>
+        <form action="index.html?submitted=true" method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </section>
+
+ <footer>
+        <p>&copy; 2025 Ethiopian Evangelical Church, Birmingham | All Rights Reserved</p>
+    </footer>
+
+   
+</body>
+</html>
